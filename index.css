@@ -5,6 +5,7 @@
 
 html,
 body {
+	height: 100vh;
 }
 
 header {
@@ -50,11 +51,29 @@ a:hover {
 }
 
 footer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
   bottom: 0;
   width: 100%;
   background-color: gray;
   padding: 5px 0;
+}
+
+.img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	display: inline;
+}
+
+.rodaPe{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
