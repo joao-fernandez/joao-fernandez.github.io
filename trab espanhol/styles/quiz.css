@@ -1,0 +1,154 @@
+:root {
+	--tomato: #e71d36;
+	--white: #ffffff;
+	--background: #fff3f0;
+	--black: #000000;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+body {
+	min-width: 500px;
+	width: 100%;
+	background-color: var(--background);
+}
+
+.fulrow {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+header {
+	height: 50px;
+	min-width: 500px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	background: var(--tomato);
+}
+
+.title {
+	color: var(--white);
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.quizz {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+}
+
+.quizz:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.sociologia {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	transition: 0.2s;
+}
+
+.sociologia:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.pages a {
+	margin-left: 15px;
+}
+
+.nome {
+	display: flex;
+	justify-content: center;
+}
+
+.nome > p {
+	color: var(--tomato);
+	border: solid 2px var(--tomato);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	padding: 5px;
+	font-size: 2.5rem;
+	font-weight: 500;
+	width: 110px;
+}
+
+.quiz {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 20px 150px;
+}
+
+.quiz p {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.resposta {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.05);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.enunciado {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 20px 150px;
+}
+
+#enviar {
+	background: #55dd5e;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s;
+	border: 1px solid transparent;
+	font-weight: bold;
+}
+
+#enviar:hover {
+	background: var(--white);
+	border: 1px solid black;
+	color: black;
+}
+
+#enviar:focus {
+	outline: none;
+}
+
+.flexdiv {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}

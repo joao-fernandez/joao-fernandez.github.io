@@ -1,0 +1,117 @@
+:root {
+	--tomato: #e71d36;
+	--white: #ffffff;
+	--background: #fff3f0;
+	--black: #000000;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+body {
+	width: 100%;
+	min-width: 500px;
+	background-color: var(--background);
+}
+
+header {
+	min-width: 500px;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	background: var(--tomato);
+}
+
+.title {
+	color: var(--white);
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.quiz {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+}
+
+.quiz:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.sociologia {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+}
+
+.sociologia:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.pages a {
+	margin-left: 15px;
+}
+
+.txtsocio {
+	width: 100%;
+	color: var(--black);
+	padding: 50px 100px;
+}
+.txtsocio > p {
+	padding-bottom: 20px;
+}
+
+#titulosocio > div {
+	color: var(--tomato);
+	border: solid 2px var(--tomato);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	padding: 5px;
+	font-size: 2rem;
+	font-weight: 500;
+	width: 300px;
+}
+
+#titulosocio {
+	display: flex;
+	justify-content: center;
+}
+
+.nome {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+#imagem {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	border-radius: 2px;
+}

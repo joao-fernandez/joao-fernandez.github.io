@@ -1,0 +1,140 @@
+:root {
+	--tomato: #e71d36;
+	--white: #ffffff;
+	--background: #fff3f0;
+	--black: #000000;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+body {
+	width: 100%;
+	min-width: 500px;
+	background-color: var(--background);
+}
+
+header {
+	height: 50px;
+	min-width: 500px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	background: var(--tomato);
+}
+
+.title {
+	color: var(--white);
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+.quiz {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+}
+
+.quiz:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.sociologia {
+	text-decoration: none;
+	color: var(--tomato);
+	background-color: var(--white);
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+}
+
+.sociologia:hover {
+	border: 1px solid var(--white);
+	color: var(--white);
+	background-color: var(--tomato);
+}
+
+.pages a {
+	margin-left: 15px;
+}
+iframe {
+	min-height: 200px;
+	min-width: 350px;
+}
+.videos {
+	display: grid;
+	grid-template-columns: 4fr 151px;
+	padding: 60px 15vw;
+	gap: 3rem;
+}
+
+.flexdiv {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+audio {
+}
+.videos > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.videos img {
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.videos img:hover {
+	transform: scale(1.1);
+}
+
+.video {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	max-width: 151px;
+}
+
+.texto {
+	width: 100%;
+	color: var(--black);
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+div > .videozinho {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.videos {
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+	img {
+		max-width: 200px;
+	}
+}

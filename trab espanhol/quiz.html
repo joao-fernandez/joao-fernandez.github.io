@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="scripts/quiz.js" defer></script>
+		<link rel="stylesheet" href="styles/quiz.css" />
+		<link rel="shortcut icon" href="../public/tomate.svg" type="image/x-icon" />
+		<title>La tomatina</title>
+	</head>
+	<body>
+		<header>
+			<a class="title" href="./index.html">La Tomatina</a>
+
+			<div class="pages">
+				<a class="sociologia" href="./sociologia.html">Análise sociológica </a>
+				<a class="quizz" href="./quiz.html">Quiz</a>
+			</div>
+		</header>
+		<div class="nome">
+			<p>Quiz</p>
+		</div>
+		<div class="enunciado">
+			<p>
+				<b>
+					El juego funcionará de la siguiente manera: Después de leer todo el
+					texto y ver el video adjunto, venga y responda nuestro cuestionario
+					para averiguar cuánto aprendió sobre esta fiesta. Escriba la respuesta
+					que crea que es correcta. Al final del cuestionario habrá una
+					retroalimentación.
+				</b>
+			</p>
+		</div>
+		<div class="fulrow">
+			<audio src="./public/pregunta1.ogg" controls></audio>
+		</div>
+		<div class="quiz">
+			<p>
+				Pregunta 1: ¿En qué año el Ayuntamiento de Buñol se hizo cargo de la
+				organización del evento?
+			</p>
+			<label class="resposta">
+				<input type="radio" name="resposta1" />
+				<span>1945</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta1" />
+				<span>1980</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta1" />
+				<span>1950</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta1" />
+				<span>1975</span>
+			</label>
+		</div>
+		<div class="fulrow">
+			<audio src="./public/pregunta2.ogg" controls></audio>
+		</div>
+		<div class="quiz">
+			<p>Pregunta 2: ¿Qué es la tomatina?</p>
+
+			<label class="resposta">
+				<input type="radio" name="resposta2" />
+				<span
+					>Una fiesta que consiste en arrojar tomates entre los
+					participantes.</span
+				>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta2" />
+				<span>Una comida típica española, hecha con tomates.</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta2" />
+				<span>Un festival con muchos rodeos.</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta2" />
+				<span
+					>Una salsa de tomate comúnmente utilizada por la población de
+					Buñhol.</span
+				>
+			</label>
+		</div>
+		<div class="fulrow">
+			<audio src="./public/pregunta3.ogg" controls></audio>
+		</div>
+		<div class="quiz">
+			<p>
+				Pregunta 3: ¿Por qué se deben triturar los tomates antes de arrojarlos a
+				los otros participantes?
+			</p>
+			<label class="resposta">
+				<input type="radio" name="resposta4" />
+				<span>Para ensuciar más a la gente.</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta4" />
+				<span>No lastimar a la gente.</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta4" />
+				<span>Para crear la impresión de que hay más tomates.</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta4" />
+				<span>Para lucir mejor en las fotos.</span>
+			</label>
+		</div>
+		<div class="fulrow">
+			<audio src="./public/pregunta4.ogg" controls></audio>
+		</div>
+		<div class="quiz">
+			<p>Pregunta 4: ¿Por qué se prohibió la tomatina entre 1950 y 1975?</p>
+
+			<label class="resposta">
+				<input type="radio" name="resposta8" />
+				<span
+					>La Tomatina fue prohibida en el país por causar daños a la propiedad
+					pública.</span
+				>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta8" />
+				<span
+					>La Tomatina fue prohibida en el país por desperdiciar alimentos.
+				</span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta8" />
+				<span>La Tomatina fue prohibida en el país por ser violenta. </span>
+			</label>
+
+			<label class="resposta">
+				<input type="radio" name="resposta8" />
+				<span
+					>La Tomatina fue prohibida en el país por no tener relación con ningún
+					elemento religioso.
+				</span>
+			</label>
+		</div>
+
+		<div class="flexdiv">
+			<button id="enviar" onclick="quizHandler()">Enviar</button>
+		</div>
+	</body>
+</html>
